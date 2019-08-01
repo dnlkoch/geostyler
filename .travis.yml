@@ -8,7 +8,7 @@ script:
 after_script:
 - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 after_success:
-- "./.ci/update-gh-pages.sh > /dev/null 2>&1"
+- "./.ci/update-gh-pages.sh"
 cache: false
 env:
   global:
